@@ -10,7 +10,7 @@ const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 // ThreeJS
 function animation(
-    time: any,
+    time: number,
     mesh: THREE.Mesh<THREE.BoxGeometry, THREE.MeshNormalMaterial>,
     renderer: THREE.WebGLRenderer,
     scene: THREE.Scene,
@@ -22,7 +22,6 @@ function animation(
     renderer.render(scene, camera);
 }
 // init
-console.log('renders');
 const camera = new THREE.PerspectiveCamera(70, window.innerWidth / window.innerHeight, 0.01, 10);
 camera.position.z = 1;
 
